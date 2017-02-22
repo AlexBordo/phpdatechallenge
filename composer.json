@@ -1,5 +1,32 @@
 {
+    "name": "alexbursak/src",
+    "description": "MyDate Test",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Bursak",
+            "email": "alexbursak3@gmail.com"
+        }
+    ],
+
+    "require": {
+        "php": "^5.5 || ^7.0"
+    },
+
     "require-dev": {
-        "phpunit/phpunit": "4.3.*"
+        "phpunit/phpunit": "^6.0"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "AB\\MyDate\\": "src/"
+        }
+    },
+
+    "autoload-dev": {
+        "psr-4": {
+            "AB\\MyDateTest\\": "tests/"
+        }
     }
 }
